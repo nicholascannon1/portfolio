@@ -13,6 +13,10 @@ module.exports = {
     rules: [
       {test: /\.css$/, loader: 'style-loader!css-loader'},
       {test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, query: {presets: ['es2015']}},
+      {test: /\.(png|jp(e*)g|svg)$/, loader: 'url-loader', options:{ 
+        limit: 8000, // converts images under 8kb to base64 strings
+        name: 'images/[hash]-[name].[ext]'
+      }},
     ]
   }
 };

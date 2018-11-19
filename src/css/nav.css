@@ -1,0 +1,44 @@
+nav {
+  position:fixed;
+  height: 50px;
+  display:block;
+  width: 100%;
+  background: #141414;
+  z-index:9;
+  padding: 20px 0 0 0;
+  top: 0px;
+}
+
+nav a, nav a b {
+  color: #FFFFFF;
+}
+
+.currentPage {
+  color: #1C7CFF;
+}
+
+/*
+  CSS Navbar animation
+*/
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0;}
+}
+
+.hideNav {
+  display: none;
+  animation-name: fadeout;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.showNav {
+  animation-name: fadein;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
