@@ -7,6 +7,18 @@
   font-size: 75pt;
 }
 
+/*
+  Scales landing text when screen becomes too small
+*/
+@media screen and (max-width: 400px) {
+  #landing h1 {
+    font-size: 50pt;
+  }
+  #landing h2 {
+    font-size: 10pt;
+  }
+}
+
 #landing h2 {
   font-size: 20pt;
 }

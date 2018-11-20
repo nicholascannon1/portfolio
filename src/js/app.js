@@ -1,12 +1,16 @@
+// Required libraries
 const $ = require('jquery');
 require('popper.js');
 require('bootstrap/dist/js/bootstrap.bundle.min');
 require('bootstrap/dist/css/bootstrap.min.css');
+const fullpage = require('fullpage.js');
+
+// My Css files
 require('../css/style.css');
 require('../css/nav.css');
 require('../css/landing.css');
 require('../css/button.css');
-const fullpage = require('fullpage.js');
+require('../css/skills.css');
 
 /**
  * FullPage.js set up
