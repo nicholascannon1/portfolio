@@ -21,7 +21,7 @@ const fullpage_api = new fullpage('#fullpage', {
       $('nav').removeClass('showNav').addClass('hideNav');
     }
 
-    // Update nablink highlighting
+    // Update navlink highlighting
     $('#pageLink' + origin.index).removeClass('currentPage');
     $('#pageLink' + destination.index).addClass('currentPage');
   }
