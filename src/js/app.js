@@ -29,9 +29,10 @@ const fullpage_api = new fullpage('#fullpage', {
 
 $('document').ready(() => {
   // Add event listeners to navigation buttons
-  $('#brand').click(function() { fullpage_api.moveTo(1); });
-  $('#pageLink1').click(function() { fullpage_api.moveTo(2); });
-  $('#pageLink2').click(function() { fullpage_api.moveTo(3); });
-  $('#pageLink3').click(function() { fullpage_api.moveTo(4); });
-  $('#pageLink4').click(function() { fullpage_api.moveTo(5); });
+  // return false to stop page from refreshing
+  $('#brand').click(function() { fullpage_api.moveTo(1); return false; });
+  $('#pageLink1').click(function() { fullpage_api.moveTo(2); return false; });
+  $('#pageLink2').click(function() { fullpage_api.moveTo(3); return false; });
+  $('#pageLink3').click(function() { fullpage_api.moveTo(4); return false; });
+  $('#pageLink4').click(function() { fullpage_api.moveTo(5); return false; });
 });

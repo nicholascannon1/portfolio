@@ -9,8 +9,15 @@ nav {
   top: 0px;
 }
 
+/*
+  Navlink styling
+*/  
 nav a, nav a b {
   color: #FFFFFF;
+}
+
+nav a:hover, nav a b:hover {
+  color: #1C7CFF;
 }
 
 .currentPage {
