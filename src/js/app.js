@@ -20,10 +20,10 @@ const fullpage_api = new fullpage('#fullpage', {
       // Entering landing so remove navbar
       $('nav').removeClass('showNav').addClass('hideNav');
     }
-
+    
     // Update navlink highlighting
-    $('#pageLink' + origin.index).removeClass('currentPage');
-    $('#pageLink' + destination.index).addClass('currentPage');
+    $('#pageLink' + origin.index).removeClass('active');
+    $('#pageLink' + destination.index).addClass('active');
   }
 });
 

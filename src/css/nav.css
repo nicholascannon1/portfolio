@@ -1,6 +1,6 @@
 nav {
   position:fixed;
-  height: 50px;
+  min-height: 50px;
   display:block;
   width: 100%;
   background: #141414;
@@ -14,14 +14,6 @@ nav {
 */  
 nav a, nav a b {
   color: #FFFFFF;
-}
-
-nav a:hover, nav a b:hover {
-  color: #1C7CFF;
-}
-
-.currentPage {
-  color: #1C7CFF;
 }
 
 /*
