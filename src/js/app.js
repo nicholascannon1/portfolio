@@ -42,4 +42,7 @@ $('document').ready(() => {
   $('#pageLink3').click(function() { fullpage_api.moveTo(4); return false; });
   $('#pageLink4').click(function() { fullpage_api.moveTo(5); return false; });
   $('#landingBtn').click(function() { fullpage_api.moveTo(3); });
+
+  // Load SVG files
+  $('#javascriptLogo').attr('src', require('../imgs/logos/javascript.svg'));
 });
