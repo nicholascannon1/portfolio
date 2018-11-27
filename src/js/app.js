@@ -12,12 +12,15 @@ require('../css/landing.css');
 require('../css/button.css');
 require('../css/skills.css');
 
+const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
+
 /**
  * FullPage.js set up
  */
 const fullpage_api = new fullpage('#fullpage', {
   autoScrolling: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+  scrollOverflow: true,
   onLeave: function(origin, destination, direction) {
     if (origin.index == 0 && direction == 'down') {
       // Leaving landing page so show navbar
@@ -44,5 +47,9 @@ $('document').ready(() => {
   $('#landingBtn').click(function() { fullpage_api.moveTo(3); });
 
   // Load SVG files
-  $('#javascriptLogo').attr('src', require('../imgs/logos/javascript.svg'));
+  //$('#javascriptLogo').attr('src', require('../imgs/logos/javascript.svg'));
+
+  logos.forEach(logo => {
+    $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
+  });
 });
