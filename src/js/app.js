@@ -3,6 +3,7 @@ const $ = require('jquery');
 require('popper.js');
 require('bootstrap/dist/js/bootstrap.bundle.min');
 require('bootstrap/dist/css/bootstrap.min.css');
+require('fullpage.js/vendors/scrolloverflow.min');
 const fullpage = require('fullpage.js');
 
 // My Css files
@@ -21,6 +22,7 @@ const fullpage_api = new fullpage('#fullpage', {
   autoScrolling: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   scrollOverflow: true,
+  //normalScrollElements: '#skillsWrapper',
   onLeave: function(origin, destination, direction) {
     if (origin.index == 0 && direction == 'down') {
       // Leaving landing page so show navbar
