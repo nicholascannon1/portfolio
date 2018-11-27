@@ -19,10 +19,8 @@ const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'c
  * FullPage.js set up
  */
 const fullpage_api = new fullpage('#fullpage', {
-  autoScrolling: true,
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
   scrollOverflow: true,
-  //normalScrollElements: '#skillsWrapper',
   onLeave: function(origin, destination, direction) {
     if (origin.index == 0 && direction == 'down') {
       // Leaving landing page so show navbar
@@ -48,9 +46,9 @@ $('document').ready(() => {
   $('#pageLink4').click(function() { fullpage_api.moveTo(5); return false; });
   $('#landingBtn').click(function() { fullpage_api.moveTo(3); });
 
-  // Load SVG files
-  //$('#javascriptLogo').attr('src', require('../imgs/logos/javascript.svg'));
+  //$('window').resize(fullpage_api.reBuild);
 
+  // Load SVG files
   logos.forEach(logo => {
     $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
   });
