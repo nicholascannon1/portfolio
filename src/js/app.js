@@ -12,6 +12,7 @@ require('../css/nav.css');
 require('../css/landing.css');
 require('../css/button.css');
 require('../css/skills.css');
+require('../css/footer.css');
 
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
 
@@ -26,20 +27,30 @@ $.fn.isInViewport = function() {
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
+/**
+ * Navbar button event function
+ */
 function navClick(id) {
   // Scroll the element into the viewport
   document.getElementById(id).scrollIntoView({
     behavior: 'smooth', block: 'start'
   });
+}
 
-  /*
-  // Highlight nav-link in navbar
-  $('#'+id+'Link').addClass('active');
-  */
+/**
+ * Checks if the landing section is in the viewport and
+ * determines if the navbar should be shown or not.
+ */
+function checkNav() {
+  if ($('#landing').isInViewport()) {
+    $('nav').removeClass('showNav').addClass('hideNav');
+  } else {
+    $('nav').addClass('showNav').removeClass('hideNav');
+  }
 }
 
 $('document').ready(() => {
-  //$('body').scrollspy({target: ".navbar"})
+  checkNav();
 
   // Add event listeners to navigation buttons
   // return false to stop page from refreshing
@@ -54,13 +65,7 @@ $('document').ready(() => {
    * Window resize and scroll function. This function is used to 
    * remove the navbar on the landing screen.
    */
-  $(window).on('resize scroll', function() {
-    if ($('#landing').isInViewport()) {
-      $('nav').removeClass('showNav').addClass('hideNav');
-    } else {
-      $('nav').addClass('showNav').removeClass('hideNav');
-    }
-  });
+  $(window).on('resize scroll', checkNav);
 
   /*
   // Load SVG files
