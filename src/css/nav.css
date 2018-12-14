@@ -1,42 +1,19 @@
 nav {
-  position:fixed;
-  min-height: 50px;
-  display:block;
-  width: 100%;
-  background: #141414;
-  z-index:9;
-  top: 0px;
+  background-color: #fff;
+  visibility: hidden; /* Navbar transitions will change this value */
 }
 
 /*
-  Navlink styling
-*/  
-nav a, nav a b {
-  color: #FFFFFF;
-}
-
-/*
-  CSS Navbar animation
+  CSS Navbar transition classes
 */
-@keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes fadeout {
-  0% { opacity: 1; }
-  100% { opacity: 0;}
-}
-
 .hideNav {
-  display: none;
-  animation-name: fadeout;
-  animation-duration: 1s;
-  animation-timing-function: linear;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .showNav {
-  animation-name: fadein;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }
