@@ -12,5 +12,6 @@
 }
 
 .custButton:hover {
-  color: #BFBFBF;
+  color: #141414;
+  background-color: #FFF;
 }
