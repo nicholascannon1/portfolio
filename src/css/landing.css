@@ -1,3 +1,9 @@
+#landing {
+  background-image: url('../imgs/backgrounds/landing-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .landingHeading {
   padding-top: 12%;
   padding-left: 6%;

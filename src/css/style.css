@@ -1,6 +1,4 @@
-/*
-  Local Font
-*/
+/* Local Fonts */
 @font-face {
   font-family: 'montserrat';
   src: url('../fonts/montserrat-medium-webfont.eot');
@@ -25,19 +23,8 @@
   font-style: normal;
 }
 
-html {
+/* Core Styles */
+body {
   font-family: 'montserrat', sans-serif;
   color: #141414;
-}
-
-#landing {
-  background-image: url('../imgs/backgrounds/landing-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#skills {
-  background-image: url('../imgs/backgrounds/skills-bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
 }

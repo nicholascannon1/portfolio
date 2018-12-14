@@ -46,8 +46,6 @@ $('document').ready(() => {
   $('#pageLink4').click(function() { fullpage_api.moveTo(5); return false; });
   $('#landingBtn').click(function() { fullpage_api.moveTo(3); });
 
-  //$('window').resize(fullpage_api.reBuild);
-
   // Load SVG files
   logos.forEach(logo => {
     $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
