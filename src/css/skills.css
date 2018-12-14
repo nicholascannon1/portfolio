@@ -2,14 +2,4 @@
   background-image: url('../imgs/backgrounds/skills-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  overflow-y: scroll;
-}
-
-#skillsWrapper {
-  position: relative;
-}
-
-#skillsWrapper div {
-  background-color: #E3E3E3;
 }
