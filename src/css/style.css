@@ -35,10 +35,6 @@ body {
   margin-bottom: 200px; /* Margin bottom by footer height */
 }
 
-main {
-  height: 100%;
-}
-
 .siteSection {
   height: 100%;
   padding: 30%;
@@ -51,20 +47,4 @@ main {
   height: 100%;
   margin: auto;
   padding: 0;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-}
-
-/*
-  Responsive Styles
-*/
-@media screen and (max-width: 992px) {
-  /* Stacks flex container on smaller screens */
-  .flex-container {
-    flex-direction: column;
-  }
 }

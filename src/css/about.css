@@ -10,6 +10,9 @@
   width: 500px;
 }
 
-@media screen and (max-width: 992px) {
-
+/* Responsive Image */
+@media (max-width: 991px) {
+  #profilePic {
+    width: 400px;
+  }
 }
