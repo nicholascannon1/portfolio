@@ -41,4 +41,30 @@ main {
 
 .siteSection {
   height: 100%;
+  padding: 30%;
+  margin: 0;
+  padding: 5%;
+}
+
+.sectionWrap {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/*
+  Responsive Styles
+*/
+@media screen and (max-width: 992px) {
+  /* Stacks flex container on smaller screens */
+  .flex-container {
+    flex-direction: column;
+  }
 }

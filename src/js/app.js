@@ -13,6 +13,7 @@ require('../css/landing.css');
 require('../css/button.css');
 require('../css/skills.css');
 require('../css/footer.css');
+require('../css/about.css');
 
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
 
@@ -21,7 +22,7 @@ const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'c
  */
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
+  var elementBottom = elementTop + $(this).outerHeight() - 80; // Offset it by 80px
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
   return elementBottom > viewportTop && elementTop < viewportBottom;
@@ -67,6 +68,7 @@ $('document').ready(() => {
    */
   $(window).on('resize scroll', checkNav);
 
+  $('#profilePic').attr('src', require('../imgs/profilePic.jpg'));
   /*
   // Load SVG files
   logos.forEach(logo => {
