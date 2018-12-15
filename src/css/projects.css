@@ -1,0 +1,5 @@
+/* Scale height of section when in mobile mode */
+#projects {
+  height: auto;
+  min-height: 100vh;
+}
