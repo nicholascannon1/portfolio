@@ -71,10 +71,9 @@ $('document').ready(() => {
 
   $('#profilePic').attr('src', require('../imgs/profilePic.jpg'));
   $('#portfolioScreenshot').attr('src', require('../imgs/projects/portfolio.png'));
-  /*
+
   // Load SVG files
   logos.forEach(logo => {
     $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
   });
-  */
 });
