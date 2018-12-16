@@ -70,6 +70,7 @@ $('document').ready(() => {
   $(window).on('resize scroll', checkNav);
 
   $('#profilePic').attr('src', require('../imgs/profilePic.jpg'));
+  $('#portfolioScreenshot').attr('src', require('../imgs/projects/portfolio.png'));
   /*
   // Load SVG files
   logos.forEach(logo => {
