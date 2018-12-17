@@ -138,9 +138,31 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-outline-light mt-3">Those are just a few, Click here for more.</button>
+        <button type="button" class="btn btn-outline-light mt-3" data-toggle="modal" data-target="#skillsModal">
+          Those are just a few, Click here for more.
+        </button>
       </div>
     </section>
+    <!-- Skills Modal -->
+    <div class="modal fade" id="skillsModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Some other skills I have</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore deleniti tenetur praesentium molestiae, placeat possimus ex aperiam omnis odio, delectus perferendis, molestias error beatae iusto harum enim rerum cum?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Section -->
     <section class="container-fluid siteSection" id="contact">
     </section>
