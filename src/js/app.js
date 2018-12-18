@@ -15,6 +15,7 @@ require('../css/skills.css');
 require('../css/footer.css');
 require('../css/about.css');
 require('../css/projects.css');
+require('../css/contact.css');
 
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
 
