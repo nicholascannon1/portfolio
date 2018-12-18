@@ -69,6 +69,7 @@ $('document').ready(() => {
    */
   $(window).on('resize scroll', checkNav);
 
+  // Load image files
   $('#profilePic').attr('src', require('../imgs/profilePic.jpg'));
   $('#portfolioScreenshot').attr('src', require('../imgs/projects/portfolio.png'));
 
