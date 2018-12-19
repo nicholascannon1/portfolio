@@ -73,6 +73,8 @@ $('document').ready(() => {
   // Load image files
   $('#profilePic').attr('src', require('../imgs/profilePic.jpg'));
   $('#portfolioScreenshot').attr('src', require('../imgs/projects/portfolio.png'));
+  $('#singlePhotosScreenshot').attr('src', require('../imgs/projects/indev.png'));
+  $('#melloScreenshot').attr('src', require('../imgs/projects/indev.png'));
 
   // Load SVG files
   logos.forEach(logo => {
