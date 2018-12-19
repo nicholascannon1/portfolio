@@ -1,5 +1,7 @@
 #about {
   background-color: #272b33;
+  height: auto;
+  min-height: 100vh;
 }
 
 #about .sectionWrap {
