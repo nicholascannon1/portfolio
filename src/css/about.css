@@ -1,7 +1,10 @@
 #about {
   background-color: #272b33;
   height: auto;
-  min-height: 100vh;
+}
+
+.boldMe {
+  font-weight: bold;
 }
 
 #about .sectionWrap {
