@@ -5,6 +5,7 @@ require('bootstrap/dist/js/bootstrap.bundle.min');
 require('bootstrap/dist/css/bootstrap.min.css');
 require('bootstrap/js/dist/util')
 require('bootstrap/js/dist/scrollspy');
+require('../favicons/favicons');
 
 // My Css files
 require('../css/style.css');
