@@ -76,6 +76,8 @@ $('document').ready(() => {
   $('#singlePhotosScreenshot').attr('src', require('../imgs/projects/indev.png'));
   $('#melloScreenshot').attr('src', require('../imgs/projects/indev.png'));
 
+  $('#resumeButton').attr('href', require('../docs/Nicholas-Cannon-CV.pdf'));
+
   // Load SVG files
   logos.forEach(logo => {
     $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
