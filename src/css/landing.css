@@ -4,6 +4,8 @@
   background-repeat: no-repeat;
   padding-top: 12%;
   padding-left: 5%;
+  height: auto;
+  min-height: 100vh;
 }
 
 #landing h1 {
