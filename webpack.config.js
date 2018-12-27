@@ -17,9 +17,12 @@ module.exports = {
         limit: 8000, // converts images under 8kb to base64 strings
         name: 'images/[hash]-[name].[ext]'
       } },
-      { test: /\.(woff(2)?|ttf|eot|pdf)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader', options: {
+      { test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/, loader: 'file-loader', options: {
         name: '[name].[ext]',
         outputPath: 'fonts/'
+      } },
+      { test: /\.pdf$/, loader: 'file-loader', options: {
+        name: 'docs/[name].[ext]'
       } }
     ]
   }
