@@ -19,6 +19,7 @@ require('../css/projects.css');
 require('../css/contact.css');
 
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
+const API_ENDPOINT = 'http:localhost:8000/';
 
 /**
  * Detects if an element is currently in the viewport
@@ -82,5 +83,21 @@ $('document').ready(() => {
   // Load SVG files
   logos.forEach(logo => {
     $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
+  });
+
+  // Contact Form
+  $('#contactForm').submit(function(e) {
+    e.preventDefault();
+    
+    // Get form values
+    var formData = {
+      'email': $('#userEmail').val(),
+      'name': $('#username').val(),
+      'message': $('#userMsg').val()
+    };
+
+    $.post(API_ENDPOINT, formData, function(data, status) {
+      alert('submitted form');
+    });
   });
 });
