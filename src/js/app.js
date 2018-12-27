@@ -7,7 +7,7 @@ require('bootstrap/js/dist/util')
 require('bootstrap/js/dist/scrollspy');
 require('../favicons/favicons');
 
-// My Css files
+// CSS files
 require('../css/style.css');
 require('../css/nav.css');
 require('../css/landing.css');
@@ -18,6 +18,7 @@ require('../css/about.css');
 require('../css/projects.css');
 require('../css/contact.css');
 
+// Constants
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
 const API_ENDPOINT = 'http:localhost:8000/';
 
@@ -53,7 +54,7 @@ function checkNav() {
   }
 }
 
-$('document').ready(() => {
+$('document').ready(function () {
   checkNav();
 
   // Add event listeners to navigation buttons
@@ -81,7 +82,7 @@ $('document').ready(() => {
   $('#resumeButton').attr('href', require('../docs/Nicholas-Cannon-CV.pdf'));
 
   // Load SVG files
-  logos.forEach(logo => {
+  logos.forEach(function (logo) {
     $(`#${logo}Logo`).attr('src', require(`../imgs/logos/${logo}.svg`));
   });
 
