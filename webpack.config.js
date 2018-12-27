@@ -22,7 +22,8 @@ module.exports = {
         outputPath: 'fonts/'
       } },
       { test: /\.pdf$/, loader: 'file-loader', options: {
-        name: 'docs/[name].[ext]'
+        name: '[name].[ext]',
+        outputPath: 'docs/'
       } }
     ]
   }

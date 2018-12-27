@@ -32,10 +32,9 @@ $.fn.isInViewport = function() {
 };
 
 /**
- * Navbar button event function
+ * Navbar button event function. Scrolls section into view.
  */
 function navClick(id) {
-  // Scroll the element into the viewport
   document.getElementById(id).scrollIntoView({
     behavior: 'smooth', block: 'start'
   });
@@ -77,6 +76,7 @@ $('document').ready(() => {
   $('#singlePhotosScreenshot').attr('src', require('../imgs/projects/indev.png'));
   $('#melloScreenshot').attr('src', require('../imgs/projects/indev.png'));
 
+  // Load pdf button
   $('#resumeButton').attr('href', require('../docs/Nicholas-Cannon-CV.pdf'));
 
   // Load SVG files
