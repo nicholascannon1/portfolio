@@ -20,7 +20,7 @@ require('../css/contact.css');
 
 // Constants
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
-const API_ENDPOINT = 'http:localhost:8000/';
+const API_HOST = 'http://localhost:8000';
 
 /**
  * Detects if an element is currently in the viewport
@@ -97,8 +97,16 @@ $('document').ready(function () {
       'message': $('#userMsg').val()
     };
 
-    $.post(API_ENDPOINT, formData, function(data, status) {
-      alert('submitted form');
+    $.ajax({
+      url: API_HOST+'/api/contact/',
+      type: 'POST',
+      data: formData,
+      success: function(data, status) {
+        $('#contactMsg').addClass('text-success').removeClass('text-danger').html(data.msg).show();
+      },
+      error: function(data, status) {
+        $('#contactMsg').addClass('text-danger').removeClass('text-success').html('Opps! There was an error sending your message. Please email me!').show();
+      }
     });
   });
 });
