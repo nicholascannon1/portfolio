@@ -21,7 +21,7 @@
 /*
   Scales landing text when screen becomes too small
 */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   #landing {
     padding-top: 30%;
   }
