@@ -20,7 +20,7 @@ require('../css/contact.css');
 
 // Constants
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
-const API_HOST = 'http://localhost:8000';
+const API_HOST = 'http://10.0.0.2:8000';
 
 /**
  * Detects if an element is currently in the viewport
@@ -103,6 +103,7 @@ $('document').ready(function () {
       data: formData,
       success: function(data, status) {
         $('#contactMsg').addClass('text-success').removeClass('text-danger').html(data.msg).show();
+        $('#contactForm').trigger('reset');
       },
       error: function(data, status) {
         $('#contactMsg').addClass('text-danger').removeClass('text-success').html('Opps! There was an error sending your message. Please email me!').show();
