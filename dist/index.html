@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <title>niccannon.com</title>
+
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+      <a class="navbar-brand ml-md-5" id="landingLink" href=""><b>NICHOLAS CANNON</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item mr-md-5">
+            <a class="nav-link active" href="#about" id="aboutLink">ABOUT</a>
+          </li>
+          <li class="nav-item mr-md-5">
+            <a class="nav-link" href="#projects" id="projectsLink">PROJECTS</a>
+          </li>
+          <li class="nav-item mr-md-5">
+            <a class="nav-link" href="#skills" id="skillsLink">SKILLS</a>
+          </li>
+          <li class="nav-item mr-md-5">
+            <a class="nav-link" href="#contact" id="contactLink">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Landing Section -->
+    <header id="landing" class="container-fluid siteSection">
+      <div class="sectionWrap">
+        <h1>Nicholas Cannon</h1>
+        <h2><i>I like to make things with technology</i></h2>
+        <button id="landingBtn" class="custButton">see what i've made</button>
+      </div>
+    </header>
+    <!-- About Section -->
+    <section class="container-fluid siteSection" id="about">
+      <div class="sectionWrap row text-center text-lg-left">
+        <div class="col-lg my-auto">
+          <img id="profilePic" class="img-fluid">
+        </div>
+        <div class="col-lg my-auto">
+          <h1 class="pb-2">Hi I'm Nicholas Cannon</h1>
+          <h2 class="pb-1">I like technology (and music)</h2>
+          <p>I'm currently living in Perth, WA and am <span class="boldMe">in my last year of study</span> at the University of Western 
+            Australia majoring in Computer and Data Science. 
+          </p>
+          <p>
+            I've been writing software and experimenting with different technologies since high school 
+            and have always been <span class="boldMe">eager to improve my skills and solve problems with technology.</span> 
+            I also enjoy sports, DJ'ing and making/listening to music.
+          </p>
+          <a id="resumeButton" href="" class="btn btn-outline-light" role="button" target="_blank">
+            View Resume
+          </a>
+          <a id="emailButton" class="btn btn-outline-light ml-2" role="button"
+            href="mailto:nicholascannon1@gmail.com">
+            Email Me
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="container-fluid siteSection" id="projects">
+      <div class="sectionWrap">
+        <h1 class="text-center pb-2">Projects</h1>
+        <!-- Project Cards -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg m-2 card">
+              <img class="card-img-top pt-3" id="portfolioScreenshot">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio site</h5>
+                <p class="card-text">
+                  Responsive portfolio website built with HTML, CSS, JavaScript and Bootstrap.
+                  <br>
+                  <span class="badge badge-dark">HTML5</span>
+                  <span class="badge badge-dark">CSS3</span>
+                  <span class="badge badge-dark">Bootstrap</span>
+                  <span class="badge badge-dark">JavaScript</span>
+                  <span class="badge badge-dark">JQuery</span>
+                  <span class="badge badge-dark">Webpack</span>
+                </p>
+                <a href="https://github.com/nicholascannon1/portfolio" target="_blank" class="btn btn-outline-dark">View Code</a>
+              </div>
+            </div>
+            <div class="col-lg m-2 card">
+              <img class="card-img-top pt-3" id="singlePhotosScreenshot">
+              <div class="card-body">
+                <h5 class="card-title">Photo Share</h5>
+                <p class="card-text">
+                  A basic photo sharing social media web app. 
+                  Featuring user accounts and authentication (JWT), a REST api built with 
+                  node and a react frontend.
+                  <br>
+                  <span class="badge badge-dark">NodeJS</span>
+                  <span class="badge badge-dark">MongoDB</span>
+                  <span class="badge badge-dark">React</span>
+                  <span class="badge badge-dark">Authentication</span>
+                </p>
+                <a href="https://github.com/nicholascannon1/SinglePhotos" target="_blank" class="btn btn-outline-dark">View Code</a>
+              </div>
+            </div>
+            <div class="col-lg m-2 card">
+              <img class="card-img-top pt-3" id="melloScreenshot">
+              <div class="card-body">
+                <h5 class="card-title">Mello</h5>
+                <p class="card-text">
+                  A mellow Trello. Basically a todo list web application that 
+                  allows for multiple lists. Built with node and react.
+                  <br>
+                  <span class="badge badge-dark">NodeJS</span>
+                  <span class="badge badge-dark">MongoDB</span>
+                  <span class="badge badge-dark">React</span>
+                  <span class="badge badge-dark">Google OAuth</span>
+                </p>
+                <a href="https://github.com/nicholascannon1/Mello" target="_blank" class="btn btn-outline-dark">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="container-fluid siteSection" id="skills">
+      <div class="sectionWrap text-center">
+        <h1 class="mb-2">Skills</h1>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-6 p-4">
+              <img id="javascriptLogo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">JavaScript</h3>
+            </div>
+            <div class="col-lg-3 col-6 p-4">
+              <img id="nodejsLogo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">NodeJs</h3>
+            </div>
+            <div class="col-lg-3 col-6 p-4">
+              <img id="pythonLogo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">Python</h3>
+            </div>
+            <div class="col-lg-3 col-6 p-4">
+              <img id="reactLogo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">React</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-6 p-4">
+              <img id="mysqlLogo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">MySQL</h3>
+            </div>
+            <div class="col-lg-3 col-6 p-4">
+              <img id="mongodbLogo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">MongoDB</h3>
+            </div>
+            <div class="col-lg-3 col-6 p-4">
+              <img id="html5Logo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">HTML5</h3>
+            </div>
+            <div class="col-lg-3 col-6 p-4">
+              <img id="css3Logo" class="skillsLogo img-fluid">
+              <h3 class="text-center pt-2">CSS3</h3>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-light mt-3" data-toggle="modal" data-target="#skillsModal">
+          Those are just a few, click here for more.
+        </button>
+      </div>
+    </section>
+    <!-- Skills Modal -->
+    <div class="modal fade" id="skillsModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Some other skills I have</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>Languages
+                <ul>
+                  <li>JavaScript (including ES6)</li>
+                  <li>Python</li>
+                  <li>C & C++</li>
+                  <li>Java</li>
+                  <li>PHP</li>
+                  <li>HTML & CSS</li>
+                </ul>
+              </li>
+              <li>Main Frameworks & Libraries
+                <ul>
+                  <li>Express.js</li>
+                  <li>React</li>
+                  <li>JQuery</li>
+                  <li>Numpy & Pandas</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </li>
+              <li>Cloud
+                <ul>
+                  <li>DigitalOcean</li>
+                </ul>
+              </li>
+              <li>Databases
+                <ul>
+                  <li>MySQL</li>
+                  <li>MongoDB</li>
+                </ul>
+              </li>
+              <li>Design
+                <ul>
+                  <li>PhotoShop</li>
+                  <li>Adobe XD</li>
+                </ul>
+              </li>
+              <li>Other
+                <ul>
+                  <li>Webpack</li>
+                  <li>Git</li>
+                  <li>Github</li>
+                  <li>Agile project management techniques</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <section class="container-fluid siteSection" id="contact">
+      <div class="sectionWrap">
+        <form id="contactForm">
+          <h1 class="mb-3">Contact Me</h1>
+          <div class="form-group">
+            <label for="userEmail">Email address</label>
+            <input type="email" class="form-control" id="userEmail" placeholder="Your email" required>
+          </div>
+          <div class="form-group">
+            <label for="username">Name</label>
+            <input type="text" class="form-control" id="username" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="userMsg">Message</label>
+            <textarea class="form-control" id="userMsg" rows="6" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-outline-dark">Submit</button>
+          <span id="contactMsg" class="ml-4"></span>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <ul class="list-unstyled list-inline text-center pt-5">
+            <li class="list-inline-item mx-2">
+                <a class="btn" href="https://github.com/nicholascannon1" target="_blank">
+                    <i class="fab fa-github socialLink"></i>
+                </a>
+            </li>
+            <li class="list-inline-item mx-2">
+                <a class="btn" href="https://www.linkedin.com/in/niccannon1" target="_blank">
+                    <i class="fab fa-linkedin socialLink"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div id="copyText" class="text-center">Nicholas Cannon &copy;2018</div>
+    </footer>
+
+    <script src="./bundle.js"></script>
+  </body>
+</html>

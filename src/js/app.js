@@ -20,7 +20,7 @@ require('../css/contact.css');
 
 // Constants
 const logos = ['javascript', 'nodejs', 'python', 'mysql', 'mongodb', 'html5', 'css3', 'react'];
-const API_HOST = 'http://10.0.0.2:8000';
+const API_HOST = 'https://www.niccannon.com/admin';
 
 /**
  * Detects if an element is currently in the viewport
