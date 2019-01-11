@@ -76,7 +76,7 @@ $('document').ready(function () {
   $('#profilePic').attr('src', require('../imgs/profilePic.jpg'));
   $('#portfolioScreenshot').attr('src', require('../imgs/projects/portfolio.png'));
   $('#singlePhotosScreenshot').attr('src', require('../imgs/projects/indev.png'));
-  $('#melloScreenshot').attr('src', require('../imgs/projects/indev.png'));
+  $('#melloScreenshot').attr('src', require('../imgs/projects/mello.png'));
 
   // Load pdf button
   $('#resumeButton').attr('href', require('../docs/Nicholas-Cannon-CV.pdf'));
