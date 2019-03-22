@@ -34,7 +34,6 @@ body {
   height: 100%;
   margin-bottom: 200px; /* Margin bottom by footer height */
   position: absolute;
-  width: 100vw;
 }
 
 .siteSection {
